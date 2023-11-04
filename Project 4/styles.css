@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    flex: 1;
+    padding: 3px 15px;
+    background-color: #ccc;
+    min-width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+#nav-bar {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+li {
+    padding: 0 25px;
+    list-style-type: none;
+}
+img {
+    width: 70px;
+    height: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin : 2px 10px;
+    padding: 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    flex: 1;
+    background-color: #ccc;
+}
+
+#features {
+    padding : 60px;
+    width: 100%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.product {
+    margin: 20px;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product p {
+    font-size: 24px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    min-height: 180px;
+    margin: 10px;
+    width: 100%;
+}
+
+.grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black ;
+}
+
+
+#prices > h2 , p {
+    margin: 5px;
+    font-weight: bolder;
+}
+
+#contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+#form {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#email,
+#name {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: #0077CC;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: #0055A5;
+}
+
+
+
+@media (max-width: 760px) {
+    #prices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    #prices {
+        grid-template-columns: 1fr;
+    }
+
+    #nav-bar {
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    #header-img {
+        width: 50px;
+        height: 40px;
+    }
+}
+
